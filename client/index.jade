@@ -1,0 +1,11 @@
+doctype html
+html(lang="en")
+  head
+    title Restaurant App!!
+  body
+    h1 Restaurant!!!
+    h2 Tipos de comida
+    each tipo in c
+      h3
+        a(href='/sabores'+'?idTipo='+tipo.id)
+          =(!tipo ? "" : tipo.name)

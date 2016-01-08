@@ -1,0 +1,29 @@
+{
+  "name": "sabores",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "mongodb": {
+      "collection":"sabores"
+    }
+  },
+  "properties": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "comentario": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "tipo": {
+      "type": "belongsTo",
+      "model": "tipo",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

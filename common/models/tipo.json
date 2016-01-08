@@ -1,0 +1,26 @@
+{
+  "name": "tipo",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "mongodb": {
+      "collection": "tipos"
+    }
+  },
+  "properties": {
+    "name": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "sabor": {
+      "type": "hasMany",
+      "model": "sabores",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}
